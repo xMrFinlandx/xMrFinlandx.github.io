@@ -105,9 +105,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", () => {
     tg.sendData(JSON.stringify(item));
 });
 
-let usercard = document.getElementById("userC")
-let p = document.createElement("p")
+let p = document.getElementById("par")
 
 p.innerText = `${tg.initDataUnsafe.user.first_name} is your name`;
 
-usercard.appendChild(p);
