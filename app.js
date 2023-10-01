@@ -5,6 +5,8 @@ tg.expand();
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#50d50d"
 
+document.getElementById("bottomLabel").value = tg.initDataUnsafe.user.first_name;
+
 let item = "";
 
 let btn1 = document.getElementById("btn1");
@@ -104,5 +106,3 @@ btn6.addEventListener("click", () =>
 Telegram.WebApp.onEvent("mainButtonClicked", () => {
     tg.sendData(JSON.stringify(item));
 });
-
-document.getElementById("par").value = tg.initDataUnsafe.user.first_name;
