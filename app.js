@@ -105,7 +105,4 @@ Telegram.WebApp.onEvent("mainButtonClicked", () => {
     tg.sendData(JSON.stringify(item));
 });
 
-let p = document.getElementById("par")
-
-p.innerText = `${tg.initDataUnsafe.user.first_name} is your name`;
 
